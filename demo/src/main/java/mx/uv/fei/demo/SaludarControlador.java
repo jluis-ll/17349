@@ -1,5 +1,6 @@
 package mx.uv.fei.demo;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 //endpoint: punto por el cual se va a acceder a la información.
+@CrossOrigin(origins = "*")
 @RestController
 public class SaludarControlador {
 
